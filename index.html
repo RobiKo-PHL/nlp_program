@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content="Philadelphia's official 311 service for reporting non-emergency issues and accessing city services. Get help with city services, report neighborhood concerns, and stay connected with your local government.">
+  <meta name="keywords"
+    content="Philadelphia, Philly, 311, city services, report issues, neighborhood concerns, local government, non-emergency services">
+  <meta name="og:locale" content="en-US">
+  <meta name="twitter:site:id" content="@philly311">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Robin J. Aluko">
+  <title>Neighborhood Liaison Program</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="web-container">
+    <h2>City of Philadelphia</h2>
+    <div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#news">Blog</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="indexp.html">Community Updates</a></li>
+        <li style="float:right"><a class="active" href="#login">Log In</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="container">
+      <div id="imageBar">
+        <img id="myImage" class="center_full" src="images/header-image-rowhomes.png" style="width: 80%">
+      </div>
+        <button class="btn">Requests Near Me</button>
+    </div>
+    
+  <div id="showBar" class="center">
+    <button id="myT" class="center" onmousedown="showBar()">SHOW</button>
+  </div>
+
+  <div id="controlBar" style="background-color: #efeeec;">
+    &nbsp;
+  
+    <button id="myP" class="center" onmousedown="mouseDown()" onmouseup="mouseUp()"> Talk / Send </button>
+
+    <button id="myQ" class="center" onmousedown="playBack()">Play Back</button>
+
+    <button id="myS" class="center" onmousedown="fullScan()">Loop</button>
+
+    <button id="myT" class="center" onmousedown="hideBar()">Hide</button>
+
+    <button id="myU" class="center" onmousedown="">Stop</button>
+
+    <button id="myBtn" class="center" onmousedown="showUploads()">Show Uploads</button>
+
+    <audio id=recordedAudio class="center"></audio>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h3>Uploaded Files:</h3>
+        <span class="close" id="close">&times;</span>
+      </div>
+    </div>
+
+    <input type="file" class="center" id="fileToLoad">
+    <div id="inputTextToSave" resize:both></div>
+    <div id="fileToLoad"></div>
+
+    <!-- Slideshow container -->
+<div class="slideshow-container">
+<h2>Recently Completed Cases</h2>
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="images/illegal-dumping.png" style="width:100%">
+    <div class="text">Illegal Dumping: 2946 W Allegheny Ave</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="images/sidewalk-repair.png" style="width:100%">
+    <div class="text">Sidewalk Repair: Chamounix Dr & W Ford Rd</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="images/building-collapse.png" style="width:100%">
+    <div class="text">Building Collapse: 2500 N 25th Street</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="disqus_thread" id="disqus_thread" style="width: 80%;"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://stramans.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <div style="background-color: #716b49; color: #ffffff";>
+      <p style="text-align: center; font-weight: bold;">&copy2024 311 Contact Center All Rights Reserved. Terms of Use |
+        Privacy Policy</p>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
